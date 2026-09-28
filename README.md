@@ -2,64 +2,49 @@
 
 This repository contains TensorFlow & Keras implementations of all 10 programs specified in the **CS722L5C Deep Learning Lab Manual** (Department of Computer Science & Engineering, SCEM, Mangaluru).
 
-These files can be executed directly as standard Python scripts or copied cell-by-cell into a **Jupyter Notebook**.
+Both `.py` scripts and Jupyter Notebook (`.ipynb`) files are provided for every program.
 
 ---
 
 ## 📁 Repository Structure
 
-| File | Program Description |
-| :--- | :--- |
-| [`01_xor_ffnn.py`](01_xor_ffnn.py) | **Exp 1:** Deep feedforward neural network to learn the XOR function using gradient-based learning and hidden units. |
-| [`02_regularization_mnist.py`](02_regularization_mnist.py) | **Exp 2:** Regularization techniques (parameter norm penalties L1/L2, dataset augmentation, Gaussian noise, Dropout, EarlyStopping) on MNIST. |
-| [`03_optimizers_comparison.py`](03_optimizers_comparison.py) | **Exp 3:** Comparison of optimization algorithms (SGD, Momentum, Adam) on a toy XOR dataset. |
-| [`04_cnn_mnist.py`](04_cnn_mnist.py) | **Exp 4:** Convolutional Neural Network (CNN) on MNIST demonstrating convolution, pooling, and classification. |
-| [`05_lstm_text_classification.py`](05_lstm_text_classification.py) | **Exp 5:** LSTM-based RNN for text classification on the IMDB sentiment dataset. |
-| [`06_bidirectional_rnn.py`](06_bidirectional_rnn.py) | **Exp 6:** Bidirectional RNN vs Standard SimpleRNN comparison on sequence prediction tasks. |
-| [`07_seq2seq_lstm.py`](07_seq2seq_lstm.py) | **Exp 7:** Encoder-Decoder architecture with LSTMs for sequence-to-sequence learning (sequence reversal). |
-| [`08_rbm_binary.py`](08_rbm_binary.py) | **Exp 8:** Restricted Boltzmann Machine (RBM) for learning binary data representations on MNIST with Contrastive Divergence. |
-| [`09_denoising_autoencoder.py`](09_denoising_autoencoder.py) | **Exp 9:** Denoising Convolutional Autoencoder to reconstruct clean images from noisy input data. |
-| [`10_gan_mnist.py`](10_gan_mnist.py) | **Exp 10:** Deep Convolutional Generative Adversarial Network (DCGAN) on MNIST to generate handwritten digits. |
+| Experiment | Python Script (`.py`) | Jupyter Notebook (`.ipynb`) | Description |
+| :--- | :--- | :--- | :--- |
+| **Exp 1** | [`01_xor_ffnn.py`](01_xor_ffnn.py) | [`01_xor_ffnn.ipynb`](01_xor_ffnn.ipynb) | Deep feedforward neural network to learn XOR function. |
+| **Exp 2** | [`02_regularization_mnist.py`](02_regularization_mnist.py) | [`02_regularization_mnist.ipynb`](02_regularization_mnist.ipynb) | Regularization techniques (L1/L2 penalties, Data Augmentation, Gaussian Noise, Dropout, EarlyStopping). |
+| **Exp 3** | [`03_optimizers_comparison.py`](03_optimizers_comparison.py) | [`03_optimizers_comparison.ipynb`](03_optimizers_comparison.ipynb) | Comparison of optimization algorithms (SGD, Momentum, Adam) on XOR. |
+| **Exp 4** | [`04_cnn_mnist.py`](04_cnn_mnist.py) | [`04_cnn_mnist.ipynb`](04_cnn_mnist.ipynb) | Convolutional Neural Network (CNN) on MNIST digit classification. |
+| **Exp 5** | [`05_lstm_text_classification.py`](05_lstm_text_classification.py) | [`05_lstm_text_classification.ipynb`](05_lstm_text_classification.ipynb) | LSTM-based RNN for text classification on IMDB dataset. |
+| **Exp 6** | [`06_bidirectional_rnn.py`](06_bidirectional_rnn.py) | [`06_bidirectional_rnn.ipynb`](06_bidirectional_rnn.ipynb) | Bidirectional RNN vs Standard SimpleRNN comparison on sequence prediction. |
+| **Exp 7** | [`07_seq2seq_lstm.py`](07_seq2seq_lstm.py) | [`07_seq2seq_lstm.ipynb`](07_seq2seq_lstm.ipynb) | Encoder-Decoder architecture with LSTMs for sequence-to-sequence learning. |
+| **Exp 8** | [`08_rbm_binary.py`](08_rbm_binary.py) | [`08_rbm_binary.ipynb`](08_rbm_binary.ipynb) | Restricted Boltzmann Machine (RBM) for binary data representations on MNIST. |
+| **Exp 9** | [`09_denoising_autoencoder.py`](09_denoising_autoencoder.py) | [`09_denoising_autoencoder.ipynb`](09_denoising_autoencoder.ipynb) | Denoising Convolutional Autoencoder to reconstruct clean images. |
+| **Exp 10** | [`10_gan_mnist.py`](10_gan_mnist.py) | [`10_gan_mnist.ipynb`](10_gan_mnist.ipynb) | Deep Convolutional Generative Adversarial Network (DCGAN) on MNIST. |
 
 ---
 
 ## 🚀 Requirements & Dependencies
 
-Install the required Python packages before running the scripts:
+Install the required Python packages before running:
 
 ```bash
-pip install tensorflow numpy matplotlib
+pip install tensorflow numpy matplotlib jupyter
 ```
 
 ---
 
 ## 💻 How to Run
 
-### Option 1: Direct Python Execution
-Run any file directly from your terminal/command prompt:
-```bash
-python 01_xor_ffnn.py
-python 04_cnn_mnist.py
-```
-
-### Option 2: Running in Jupyter Notebook
-Open Jupyter Notebook in this directory:
+### Option 1: Jupyter Notebook (`.ipynb`)
+Launch Jupyter Notebook in this directory:
 ```bash
 jupyter notebook
 ```
-Create a new Python 3 notebook and copy the code from any `.py` file directly into code cells and run.
+Open any `.ipynb` file and execute the cells.
 
----
-
-## 📤 Push to GitHub
-
-To push these programs to your GitHub repository, run the following git commands:
-
+### Option 2: Direct Python Execution (`.py`)
+Run any script directly from terminal:
 ```bash
-git init
-git add .
-git commit -m "Add CS722L5C Deep Learning TensorFlow lab programs"
-git branch -M main
-git remote add origin <YOUR_GITHUB_REPO_URL>
-git push -u origin main
+python 01_xor_ffnn.py
+python 04_cnn_mnist.py
 ```
